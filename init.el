@@ -12,6 +12,7 @@
 		      powerline
 		      projectile
 		      company
+		      magit
 		      sml-mode
 		      paredit
 		      flycheck
@@ -41,6 +42,7 @@
 
 ;; Keybinds
 (global-set-key (kbd "C-;") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ;; Theme
 (load-theme 'zenburn t)
