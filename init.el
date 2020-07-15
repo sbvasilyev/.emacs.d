@@ -9,6 +9,7 @@
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (defvar ij/packages '(smex
+		      powerline
 		      projectile
 		      company
 		      sml-mode
@@ -17,6 +18,11 @@
 		      clojure-mode
 		      rust-mode
 		      racer
+		      web-mode
+		      add-node-modules-path
+		      prettier
+		      js2-mode
+		      emmet-mode
 		      flycheck-rust
 		      zenburn-theme
 		      ))
@@ -44,6 +50,7 @@
 (load-library "lisps")
 (load-library "misc")
 (load-library "rust")
+(load-library "js")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

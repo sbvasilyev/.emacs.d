@@ -1,3 +1,8 @@
+;; Powerline
+(require 'powerline)
+(powerline-default-theme)
+
+
 ;; Smex
 (setq smex-save-file (expand-file-name ".smex-items" user-emacs-directory))
 (smex-initialize)
@@ -26,6 +31,11 @@
 
 (setq company-tooltip-align-annotations t)
 (add-hook 'prog-mode-hook 'company-mode)
+
+
+;; Auto close
+(electric-pair-mode 1)
+(setq electric-pair-preserve-balance nil)
 
 
 ;; Menu, toolbars, etc..
